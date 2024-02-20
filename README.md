@@ -11,3 +11,5 @@
     2. -rwxr-xr-x 1 gradlew 파일이 실행 가능한 권한 부여해 주셔야 함
     3. 참고: gradlew 파일이 윈도우에서 생성시에는 읽기만 가능한 권한으로 생성
 5. 학습: gitbash & jenkins Item 생성 & githun 활용 & gradle 주의사항
+
+test
