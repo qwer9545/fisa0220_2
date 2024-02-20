@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 
-public class SimpleController {
+public class SimpleController2 {
 	
 	@GetMapping("getdata")
 	public String get() {
 		System.out.println("clear");
-		return "fisa data 수정 1";
+		return "fisa data 수정 2";
 	}
 	
 }
