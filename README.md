@@ -12,4 +12,38 @@
     3. 참고: gradlew 파일이 윈도우에서 생성시에는 읽기만 가능한 권한으로 생성
 5. 학습: gitbash & jenkins Item 생성 & githun 활용 & gradle 주의사항
 
-test3
+------------------ Jenkins 구성
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        
+        stage('git clone') {
+            steps {
+                echo 'git clone'
+                
+                git branch: 'main', 
+                credentialsId: 'credentialId', 
+                url: 'https://github.com/qwer9545/fisa0220_2.git'
+                
+            }
+        }
+        
+        stage('list view') {
+            steps {
+                echo 'list start'
+                
+                sh ''' ls -al '''
+                sh ''' pwd '''
+            }
+        }
+        
+    }
+}
+
+
